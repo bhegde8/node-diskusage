@@ -39,4 +39,4 @@ void Init(v8::Local<v8::Object> exports)
     Nan::SetMethod(exports, "getDiskUsage", GetDiskUsage);
 }
 
-NODE_MODULE(diskusage, Init)
+NAN_MODULE_WORKER_ENABLED(diskusage, Init)
